@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+}
+
+header {
+  background: #007b83;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  border-bottom: 4px solid #004f53;
+}
+
+#page {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  background-color: #e0f7f5;
+  padding: 15px;
+  border-radius: 8px;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+#page button {
+  background-color: #009999;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#page button:hover {
+  background-color: #00b3b3;
+  transform: scale(1.05);
+}
+
+.gallery {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.gallery h2 {
+  color: #004f53;
+  margin-bottom: 25px;
+  font-size: 28px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.image-container img {
+  width: 45%;
+  max-width: 600px;
+  height: 360px;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s;
+  border: 2px solid #009999;
+}
+
+.image-container img:hover {
+  transform: scale(1.05);
+}
+
+.video-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.video-container video {
+  width: 45%;
+  max-width: 600px;
+  height: 360px;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s;
+  border: 2px solid #009999;
+}
+
+.video-container video:hover {
+  transform: scale(1.03);
+}
+
+.about {
+  background: #f5f9fa;
+  padding: 40px 60px;
+  text-align: justify;
+}
+
+.about h2 {
+  color: #004f53;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about p {
+  color: #222;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+footer {
+  background-color: #004f53;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 16px;
+  margin-top: 30px;
+  border-top: 3px solid #007b83;
+}
+
+@media (max-width: 768px) {
+  #page {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #page button {
+    width: 80%;
+    margin: 8px 0;
+  }
+
+  .image-container img,
+  .video-container video {
+    width: 90%;
+    height: auto;
+  }
+
+  .about {
+    padding: 20px;
+  }
+
+  .about p {
+    font-size: 16px;
+  }
+}

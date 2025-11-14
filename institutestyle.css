@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+}
+
+body {
+  background-color: #fdfcfb;
+  color: #222;
+}
+
+
+header {
+  background-color: #007b83;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  border-bottom: 4px solid #004f53;
+}
+
+#page {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  background-color: #e0f7f5;
+  padding: 15px;
+  border-radius: 8px;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+#page button {
+  background-color: #009999;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#page button:hover {
+  background-color: #00b3b3;
+  transform: scale(1.05);
+}
+
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 35px;
+  max-width: 1300px;
+  margin: 40px auto;
+  padding: 0 10px;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  width: 420px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px) scale(1.03);
+}
+
+.card img {
+  width: 100%;
+  height: 320px; 
+  object-fit: cover;
+  border-bottom: 3px solid #009999;
+}
+
+.card p {
+  padding: 15px;
+  color: #004f53;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+
+.video-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  max-width: 1100px;
+  margin: 40px auto;
+}
+
+.video-box {
+  flex: 1 1 45%;
+  display: flex;
+  justify-content: center;
+}
+
+.video-box video {
+  width: 100%;
+  max-width: 500px;
+  height: 320px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.info-section {
+  background-color: #e0f7f5;
+  padding: 40px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 40px auto;
+  max-width: 1000px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.info-section h2 {
+  color: #004f53;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.info-section p {
+  color: #333;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+footer {
+  background-color: #004f53;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+  border-top: 3px solid #007b83;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 90%;
+  }
+
+  .card img {
+    height: 250px;
+  }
+
+  .video-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .video-box {
+    width: 90%;
+  }
+
+  .video-box video {
+    height: auto;
+  }
+}
